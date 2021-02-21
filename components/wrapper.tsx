@@ -21,7 +21,7 @@ export function Wrapper({children}){
                     <Link href='/'><a className={styles.header__link} >POSTS</a></Link>
                     </li>
                     <li className={styles.header__item}>
-                    <Link href={verifity?'/newpost':'/signup'}><a className={styles.header__link} >NEW POST</a></Link>
+                    <Link href={verifity?'/posts/newpost':'/signup'}><a className={styles.header__link} >NEW POST</a></Link>
                     </li>
                     <li className={styles.header__item}>
                     <Link href='/login'><a className={styles.header__link} >LOG IN</a></Link>

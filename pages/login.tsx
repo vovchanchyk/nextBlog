@@ -16,7 +16,7 @@ const initialValues:formValues = {
 const dispatch = useDispatch()
 function handle(values:formValues){
     dispatch(loginActionCreator(values))
-   router.push('/newpost')
+   router.push('/posts/newpost')
 }
 
 

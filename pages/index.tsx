@@ -12,7 +12,7 @@ interface Props {
 }
 export default function Home(props: Props): ReactElement {
 
-  const posts = props.data.filter((el: postType) => (+el.id && el.body && el.title && el.body.length > 4)).reverse()
+  const posts = props.data.filter((el: postType) => (+el.id && el.body && el.title)).reverse()
   return (
     <Wrapper>
       <div className={styles.main__posts}>

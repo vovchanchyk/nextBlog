@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { Wrapper } from '../components/wrapper';
-import styles from '../styles/newpost.module.css';
+import { Wrapper } from '../../components/wrapper';
+import styles from '../../styles/newpost.module.css';
 
 
 

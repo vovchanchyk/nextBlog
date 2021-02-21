@@ -17,7 +17,7 @@ const dispatch = useDispatch()
 function handle(values:formValues){
     console.log(values)
     dispatch(signupActionCreator(values))
-    router.push('/newpost')
+    router.push('/posts/newpost')
 
    
 }
