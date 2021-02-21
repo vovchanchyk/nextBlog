@@ -12,8 +12,10 @@ preferable way to run - npm run go
 this command starts both ports together
 
 ```
-
 Open (http://localhost:3000) with your browser to see the result.
 
-
+```
+FOR AUTH
+mane: vova,
+password:1111
 
