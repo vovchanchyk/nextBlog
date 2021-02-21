@@ -6,13 +6,16 @@ import { Wrapper } from '../components/wrapper'
 import { postType } from '../types/postTypes'
 import styles from '../styles/index.module.css'
 
-
-interface Props {
-  data: postType[]
+interface Props{
+  
+    error:boolean
+    data : postType[]
+  
 }
-export default function Home(props: Props): ReactElement {
+export default function Home(props:Props): ReactElement {
 
-  const posts = props.data.filter((el: postType) => (+el.id && el.body && el.title)).reverse()
+  if(props.error)return <Wrapper> SERVER IS UNAVELABLE TEMPRORARY</Wrapper>
+ 
   return (
     <Wrapper>
       <div className={styles.main__posts}>
@@ -20,18 +23,24 @@ export default function Home(props: Props): ReactElement {
           POSTS
         </h3>
         <div className={styles.main__column}>
-          {posts.map((el, i) => <PostComponent key={i} href={el.id} title={el.title} body={el.body} ></PostComponent>)}
+        {props.data.filter((el: postType) => (+el.id && el.body && el.title)).reverse()
+          .map((el, i) => <PostComponent key={i} href={el.id} title={el.title} body={el.body} ></PostComponent>)}
         </div>
       </div>
-
     </Wrapper>
   )
 
 }
 
-
 export async function getStaticProps() {
-  const response = await axios.get('https://simple-blog-api.crew.red/posts')
-  const data: postType[] = await response.data
-  return { props: { data } }
+  let data :[]
+  let error:boolean = false
+  await axios.get('https://simple-blog-api.crew.red/posts')
+    .then(response => {
+      debugger
+      data = response.data})
+    .catch(()=> error = true)
+    return{props:{data,error}}
+ 
 }
+
