@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 100px;
+    padding: 5px 60px;
     font-size: 20px;
     font-weight: 600;
     background-color: #9021ff;
@@ -23,10 +23,10 @@
 }
 .header__item {
     
-    padding: 7px;
+    padding: 10px;
 }
 .header__item:hover {
-    background-color: #8a2be2;
+    background-color: #c193ec;
     border-bottom: solid 0.5px #ffccff;   
 }
 .header__link {
@@ -36,14 +36,13 @@
 .header__btn {
     background-color: #9021ff;
     border: none;
-    border-radius: 5px;
     padding: 10px;
     color: #ffff;
     font-size: 20px;
     font-weight: 600;
 }
 .header__btn:hover{
-    background-color: #8a2be2;
+    background-color: #c193ec;
     border-bottom: solid 0.5px #ffccff;
 }
 .main{

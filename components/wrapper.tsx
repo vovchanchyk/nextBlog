@@ -11,7 +11,7 @@ export function Wrapper({children}){
     const dispatch = useDispatch();
     const handle=()=>{
      dispatch(logOutActionCreator())
-     router.push('/')
+     router.push('/signup')
     }
     return(
         <div className={styles.wrapper}>
