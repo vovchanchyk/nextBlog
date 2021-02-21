@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "vova",
+      "password": "1111"
+    },
+    {
+      "id": 2,
+      "name": "misha",
+      "password": "2222"
+    },
+    {
+      "id": 3,
+      "name": "sasha",
+      "password": "3333"
+    },
+    {
+      "name": "vova",
+      "password": "1111",
+      "id": 4
+    },
+    {
+      "name": "vova",
+      "password": "1111",
+      "id": 5
+    },
+    {
+      "name": "vovas",
+      "password": "1133",
+      "id": 6
+    },
+    {
+      "password": "1133",
+      "id": 7
+    },
+    {
+      "password": "1133",
+      "id": 8
+    },
+    {
+      "password": "1133",
+      "id": 9
+    },
+    {
+      "password": "1133",
+      "id": 10
+    },
+    {
+      "name": "hhh",
+      "password": "kkk",
+      "id": 11
+    },
+    {
+      "name": "vika",
+      "password": "5555",
+      "id": 12
+    }
+  ]
+}

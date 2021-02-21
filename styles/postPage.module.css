@@ -1,0 +1,16 @@
+.post {
+    
+    margin: 10px 0px 0px;
+    padding: 10px;
+    background-color: #eaf2f38e;
+}
+.post__title {
+    margin:5px 10px;
+    font-weight: 500;
+}
+.post__body {
+    font-weight: 500;
+    margin-block-start: 0;
+    margin-block-end: 0.5rem;
+    padding: 5px;    
+}
