@@ -1,11 +1,10 @@
-import { type } from 'os';
-import {combineReducers} from 'redux';
+import { type } from "os";
+import { combineReducers } from "redux";
 
-import { userReduser } from './userReduser';
+import { userReduser } from "./userReduser";
 
 export const rootReduser = combineReducers({
-     user:userReduser,
-     
-})
+  user: userReduser,
+});
 
-export type RootState = ReturnType<typeof rootReduser>
+export type RootState = ReturnType<typeof rootReduser>;

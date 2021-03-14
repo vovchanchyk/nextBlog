@@ -1,6 +1,5 @@
-
 export interface getIdType {
-    query:{
-        id: number | string
-    }
+  query: {
+    id: number | string;
+  };
 }

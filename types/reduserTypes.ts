@@ -1,14 +1,9 @@
-
 export interface userState {
-    user: {};
-    verifity: boolean;
-  }
-  
+  user: {};
+  verifity: boolean;
+}
+
 export interface typeAction {
-   
-    type:string,
-    payload?:any  
-    
-      
-    }
-  
+  type: string;
+  payload?: any;
+}
